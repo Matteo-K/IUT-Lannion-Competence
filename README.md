@@ -1,4 +1,4 @@
-# IUT-Lannion-Comp-tence
+# IUT-Lannion-Competence
 
 - Objectif : Présenter la formation du BUT 1 en mettant en avant les acquis et compétences.
 - Réalisation : Sous une forme créative et originale.
