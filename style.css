@@ -1,0 +1,32 @@
+:root {
+  --clr-text: #e6edf9;
+  --clr-bg: #020508;
+  --clr-primaire: #90ace4;
+  --clr-secondaire: #53228c;
+  --clr-accent: #aa3acf;
+}
+
+body {
+  color: var(--clr-text);
+  background-color: var(--clr-bg);
+}
+
+header img {
+  height: 80px;
+  width: 80px;
+  border-radius: 30%;
+  background: radial-gradient(closest-side, #ddd, #000);
+}
+
+figure {
+  display: flex;
+  flex-flow: nowrap row;
+  align-items: center;
+  gap: 20px;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  border-bottom: var(--clr-accent) 3px solid;
+}
