@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
 *,
 *::before,
 *::after {
@@ -18,7 +19,7 @@
 }
 
 html {
-  font-family: "latoi";
+  font-family: "lato";
 }
 
 body {
@@ -42,6 +43,10 @@ figure {
   margin-left: 5%;
 }
 
+figcaption {
+  font-size: 1.6rem;
+}
+
 header {
   display: flex;
   flex-flow: row nowrap;
@@ -49,30 +54,9 @@ header {
   height: 10vh;
 }
 
-/*
-ScrollBar
-
-::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 0.5rem;
-  background: var(--clr-secondaire);
-  transition: all 0.5s ease-in-out;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--clr-accent);
-}
-
-::-webkit-scrollbar-track {
-  background: var(--clr-bg);
-}
-*/
-
 .swiper {
   margin-top: 3vh;
+  padding-right: 20em;
 }
 
 /* Cards */

@@ -2,7 +2,7 @@ let TrandingSlider = new Swiper(".swiper", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
-  loop: true,
+  loop: false,
   slidesPerView: "auto",
   coverflowEffect: {
     rotate: 6,
