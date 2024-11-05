@@ -200,16 +200,21 @@ main {
     padding-right: 0;
   }
 
-  .nav,
   .slider-arrow {
     position: unset;
     visibility: collapse;
+  }
+
+  .nav {
+    width: 80%;
+    height: 30px;
   }
 }
 
 @media (max-width: 500px) {
   .swiper-slide {
-    width: 28rem !important;
+    top: 50%;
+    width: 25rem !important;
     height: 36rem !important;
   }
   .swiper-slide a img {
