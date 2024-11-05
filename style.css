@@ -51,12 +51,35 @@ figcaption {
 header {
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
   border-bottom: var(--clr-accent) 3px solid;
   height: var(--header-size);
 }
 
 main {
   height: calc(100vh - var(--header-size));
+}
+
+/* Lien Qrcode */
+
+.lienQrcode {
+  text-align: center;
+  margin-right: 10px;
+  padding: 15px;
+  color: var(--clr-primaire);
+  background-color: var(--clr-secondaire);
+  border-radius: 10px;
+}
+
+.lienQrcode:hover {
+  background-color: #45228c;
+}
+
+.lienQrcode:active {
+  background-color: var(--clr-accent);
+  color: var(--clr-bg);
 }
 
 .swiper {
@@ -193,4 +216,13 @@ main {
     width: 28rem !important;
     height: 36rem !important;
   }
+}
+
+/* Qrcode */
+
+#qrcode {
+  width: 40%;
+  margin-top: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
