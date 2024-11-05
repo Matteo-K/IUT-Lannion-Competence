@@ -15,7 +15,25 @@
       <a class="lienQrcode" href="index.html">Retour</a>
     </header>
     <main>
-      <img id="qrcode" src="images/qrcode.png" alt="Logo Qrcode" />
+      <figure id="qrcode">
+        <img src="images/qrcode.png" alt="Logo Qrcode" />
+        <figcaption>
+          Copiez cette adresse : <br />
+          <a
+            id="tocopy"
+            href="https://matteo-k.github.io/IUT-Lannion-Competence/"
+            target="_blank"
+            >https://matteo-k.github.io/IUT-Lannion-Competence/</a
+          >
+          <input
+            type="button"
+            value="Copier"
+            class="js-copy"
+            data-target="#tocopy"
+          />
+        </figcaption>
+      </figure>
     </main>
   </body>
+  <script src="js/qrcode.js"></script>
 </html>

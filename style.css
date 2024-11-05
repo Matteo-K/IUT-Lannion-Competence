@@ -68,7 +68,7 @@ main {
   text-align: center;
   margin-right: 10px;
   padding: 15px;
-  color: var(--clr-primaire);
+  color: var(--clr-text);
   background-color: var(--clr-secondaire);
   border-radius: 10px;
 }
@@ -79,7 +79,6 @@ main {
 
 .lienQrcode:active {
   background-color: var(--clr-accent);
-  color: var(--clr-bg);
 }
 
 .swiper {
@@ -191,6 +190,43 @@ main {
   opacity: 1;
 }
 
+/* Qrcode */
+
+#qrcode {
+  width: 40%;
+  margin-top: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#qrcode figcaption,
+#qrcode a {
+  text-align: center;
+  color: #fff;
+}
+
+#qrcode figcaption a:hover {
+  color: var(--clr-primaire);
+}
+
+#qrcode input {
+  margin-top: 10px;
+  padding: 10px;
+  color: var(--clr-text);
+  background-color: #45228c;
+  border: none;
+}
+
+#qrcode input:hover {
+  background-color: #53228c;
+}
+
+#qrcode input:active {
+  background-color: #aa3acf;
+}
+
 @media (max-width: 990px) {
   html {
     zoom: 0.8;
@@ -221,13 +257,8 @@ main {
     width: 28rem !important;
     height: 36rem !important;
   }
-}
 
-/* Qrcode */
-
-#qrcode {
-  width: 40%;
-  margin-top: 50px;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  #qrcode {
+    width: 80%;
+  }
 }
