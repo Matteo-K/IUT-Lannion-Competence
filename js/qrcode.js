@@ -18,10 +18,6 @@ function docopy() {
   try {
     // Exécution de la commande de copie
     var result = document.execCommand("copy");
-    if (result) {
-      // La copie a réussi
-      alert("Copié !");
-    }
   } catch (err) {
     // Une erreur est surevnue lors de la tentative de copie
     alert(err);
