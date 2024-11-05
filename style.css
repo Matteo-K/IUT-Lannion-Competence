@@ -15,11 +15,12 @@
   --clr-primaire: #90ace4;
   --clr-secondaire: #53228c;
   --clr-accent: #aa3acf;
-  scroll-behavior: smooth;
+  --header-size: 10vh;
 }
 
 html {
   font-family: "lato";
+  overflow-y: hidden;
 }
 
 body {
@@ -29,7 +30,7 @@ body {
 }
 
 header img {
-  height: 8vh;
+  height: calc(var(--header-size) - 2vh);
   width: 8vh;
   border-radius: 30%;
   background: radial-gradient(closest-side, #ddd, #000);
@@ -51,7 +52,11 @@ header {
   display: flex;
   flex-flow: row nowrap;
   border-bottom: var(--clr-accent) 3px solid;
-  height: 10vh;
+  height: var(--header-size);
+}
+
+main {
+  height: calc(100vh - var(--header-size));
 }
 
 .swiper {
@@ -64,17 +69,6 @@ header {
 .swiper-slide {
   width: 37rem;
   height: 42rem;
-}
-
-@media (max-width: 500px) {
-  .swiper-slide {
-    width: 28rem !important;
-    height: 36rem !important;
-  }
-  .swiper-slide a img {
-    width: 28rem !important;
-    height: 36rem !important;
-  }
 }
 
 .swiper-slide a img {
@@ -154,6 +148,7 @@ header {
   padding: 10px;
   border-radius: 10px;
 }
+
 .swiper-pagination span {
   width: auto;
 }
@@ -176,5 +171,26 @@ header {
 @media (max-width: 990px) {
   html {
     zoom: 0.8;
+  }
+
+  .swiper {
+    padding-right: 0;
+  }
+
+  .nav,
+  .slider-arrow {
+    position: unset;
+    visibility: collapse;
+  }
+}
+
+@media (max-width: 500px) {
+  .swiper-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+  .swiper-slide a img {
+    width: 28rem !important;
+    height: 36rem !important;
   }
 }
