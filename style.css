@@ -96,9 +96,7 @@ main {
 }
 
 .swiper-slide a img {
-  width: 37rem;
   height: 42rem;
-  border-radius: 2rem;
   object-fit: cover;
 }
 
