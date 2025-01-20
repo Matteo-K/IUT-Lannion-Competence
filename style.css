@@ -91,12 +91,13 @@ main {
 /* Cards */
 
 .swiper-slide {
-  width: 37rem;
+  width: fit-content;
   height: 42rem;
 }
 
 .swiper-slide a img {
-  height: 42rem;
+  height: 80vh;
+  width: calc(80vh * 0.707);
   object-fit: cover;
 }
 
@@ -108,7 +109,7 @@ main {
   bottom: 0;
 }
 
-.swiper-slide-content .food-price {
+.swiper-slide-content {
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -251,10 +252,6 @@ main {
   .swiper-slide {
     top: 50%;
     width: 25rem !important;
-    height: 36rem !important;
-  }
-  .swiper-slide a img {
-    width: 28rem !important;
     height: 36rem !important;
   }
 

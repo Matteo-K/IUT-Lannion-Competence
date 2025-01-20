@@ -4,6 +4,9 @@ let TrandingSlider = new Swiper(".swiper", {
   centeredSlides: true,
   loop: false,
   slidesPerView: "auto",
+  keyboard: {
+    enabled: true,
+  },
   coverflowEffect: {
     rotate: 6,
     stretch: 80,
