@@ -228,6 +228,17 @@ main {
   background-color: #aa3acf;
 }
 
+#qrcode + div {
+  text-align: center;
+}
+
+#qrcode + div a {
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--clr-primaire);
+  text-decoration: underline;
+}
+
 @media (max-width: 990px) {
   html {
     zoom: 0.8;
