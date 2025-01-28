@@ -240,6 +240,28 @@ main {
   text-decoration: underline;
 }
 
+#programme {
+  a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    &:hover {
+      color: var(--clr-accent);
+      img {
+        background-color: var(--clr-accent);
+      }
+    }
+  }
+  img {
+    clip-path: circle(50% at 50% 50%);
+    background-color: var(--clr-primaire);
+    width: 50px;
+    padding: 8px;
+  }
+}
 @media (max-width: 990px) {
   html {
     zoom: 0.8;
