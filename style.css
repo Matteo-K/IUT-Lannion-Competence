@@ -93,7 +93,7 @@ main {
 
 .swiper-slide {
   width: fit-content;
-  height: 42rem;
+  height: fit-content;
 }
 
 .swiper-slide a img {
