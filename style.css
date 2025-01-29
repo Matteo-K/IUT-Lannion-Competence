@@ -283,12 +283,6 @@ main {
 }
 
 @media (max-width: 500px) {
-  .swiper-slide {
-    top: 50%;
-    width: 25rem !important;
-    height: 36rem !important;
-  }
-
   #qrcode {
     width: 80%;
   }
